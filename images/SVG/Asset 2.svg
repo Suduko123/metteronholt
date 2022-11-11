@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 943.81 100.94">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Gotham-Medium, Gotham;
+        font-size: 89.8px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #ffc552;
+      }
+
+      .cls-3 {
+        letter-spacing: -.18em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.1em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <text class="cls-1" transform="translate(0 76.33)"><tspan x="0" y="0">FRISØR </tspan><tspan class="cls-3" x="377.97" y="0">/</tspan><tspan class="cls-2" x="408.6" y="0">/</tspan><tspan x="455.38" y="0" xml:space="preserve"> RØNHO</tspan><tspan class="cls-4" x="839.1" y="0">L</tspan><tspan x="885.89" y="0">T</tspan></text>
+  </g>
+</svg>
