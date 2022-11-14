@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+    <!-- Vi skal nok have noget mere META content her -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e4a889809e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Mette Rønholt</title>
 </head>
 <body>
+    <!-- Gul pre-header før nav -->
     <div id="pre-header">
-        <p>Få 10% studierabat i salonen</p>
+        <p id="small-pre">Få 10% studierabat i salonen</p>
         <i class="fa-solid fa-circle"></i>
         <p>Få 20% rabat på elevklip</p>
     </div>
+    <!-- #hero dækker omkring hele nav så hero billedet kan placeres bag nav -->
     <div id="hero">
-    <header>
-        <nav>
-            <div id="nav-left">
+        <header>
+            <!-- Navigation -->
+            <nav>
                 <a href="#">behandlinger</a>
 
+                <!-- Første dropdown -->
                 <div class="dropdown">
-                <a href="#" class="dropdown-btn">produkter <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#" class="dropdown-btn">Brands <i class="fa-solid fa-chevron-down"></i></a>
                     <div class="dropdown-content">
                         <a href="#">Ingredien</a>
                         <a href="#">Eleven Australia</a>
-                        <a href="#">Webshop</a>
                     </div>
                 </div>
-            </div>
 
-            <div>
-                <img src="images/logo.png" alt="logo">
-            </div>
+                <a href="#">Webshop</a>
 
-            <div id="nav-right">
+                <a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+
                 <a href="#">Praktisk info.</a>
 
+                <!-- Anden dropdown -->
                 <div class="dropdown">
                     <a href="#" class="dropdown-btn">Om os <i class="fa-solid fa-chevron-down"></i></a>
                     <div class="dropdown-content">
@@ -45,32 +49,119 @@
                         <a href="#">Værdier</a>
                     </div>
                 </div>
-    
+
                 <a href="#" id="booking">booking</a>
+            </nav>
+
+            <!-- BURGER -->
+            <div id="burger">
+                <div id="mobil-logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></a> 
+                </div>
+                <a href="menu.html"><i class="fa-solid fa-bars"></i></a>
             </div>
-        </nav>
-    </header>
+        </header>
+
+        <!-- CALL TO ACTION -->
+        <div id="cta">
+            <a href="#">Booking</a>
+        </div>
     </div>
 
-    <main></main>
+    <!-- Primært content på siden starter her -->
+    <main>
+        <!-- VELKOMMEN -->
+        <div id="velkommen-sektion">
+            <h1>Velkommen til frisør Mette Rønholt</h1>
+            <h2>Din frisørsalon med plads til alle</h2>
+            <p>Vi sætter dine ønsker og behov i højsædet når du bliver klippet hos os.
+                <br><br>
+                Vi er også klar med gode råd og vejledning,
+                 så vi står altid klar til at inspirere dig hvis du ønsker et nyt look.
+                <br><br>
+                Når du sidder i stolen, kan du nyde en kop kaffe eller the, mens du læser Gaffa eller får en god snak.</p>
+        </div>
 
+        <!-- CIRKEL MENUER -->
+        <div id="cirkel-container">
+            <a href="#">
+                <div class="cirkel">
+                    <i class="material-icons">groups</i>
+                </div>
+                <h2>Personale</h2>
+            </a>
+            <a href="#">
+                <div class="cirkel">
+                    <i class="material-icons">content_cut</i>
+                </div>
+                <h2>Behandlinger</h2>
+            </a>
+            <a href="#">
+                <div class="cirkel">
+                    <i class="material-icons">photo_camera</i>
+                </div>
+                <h2>Galleri</h2>
+            </a>
+        </div>
+
+        <!-- ANMELDELSER -->
+        <div id="anmeldelser-container">
+            <i><i class="fa-solid fa-arrow-left"></i></i>
+            <div class="anmeldelse">
+                <div class="placeholder"></div>
+                <div class="quote">
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+                <h4>Dejlig salon at blive forkælet i! Super dygtigt og ærligt personale! I får min varmeste anbefaling.</h4>
+                <p><b>Inge Ingersen</b></p>
+                <p>Pensionist</p>
+            </div>
+            <div class="anmeldelse">
+                <div class="placeholder"></div>
+                <div class="quote">
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+                <div>
+                    <h4></h4>
+                    <p><b>Christian Andersen</b></p>
+                    <p>Skolelærer</p>
+                </div>
+            </div>
+            <div class="anmeldelse">
+                <div class="placeholder"></div>
+                <div class="quote">
+                    <i class="fa-solid fa-quote-right"></i>
+                </div>
+                <h4></h4>
+                <p><b>Camilla Larsen</b></p>
+                <p>Studerende</p>
+            </div>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+    </main>
+
+    <!-- Footer starter her -->
     <footer>
         <div>
             <h3>Kontakt</h3>
             <p><b>E-mail:</b> metterønholt@mail.dk</p>
             <p><b>Tlf.:</b> +45 86 14 49 94</p>
         </div>
+        <hr>
         <div>
             <h3>Åbningstider</h3>
             <p><b>Mandag - torsdag:</b> 9:00 - 17:30</p>
             <p><b>Fredag:</b> 9:00 - 18:30</p>
             <p><b>Lørdag:</b> 9:00-13:00</p>
         </div>
+        <hr>
         <div>
             <h3>Adresse</h3>
             <p>Rørdamsvej 1</p>
             <p>8260 Viby J</p>
         </div>
+        <hr>
         <div id="some">
             <h3>Følg os</h3>
             <a href="https://www.facebook.com/FrisoerMetteRoenholt" target="_blank"><i class="fa-brands fa-square-facebook"></i></a> <a href="https://www.instagram.com/frisoer.metteroenholt/" target="_blank"><i class="fa-brands fa-instagram"></i></a>

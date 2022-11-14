@@ -1,15 +1,22 @@
 /* FONTS */
 @import url('https://fonts.cdnfonts.com/css/gotham');
 
-body {
-    font-family: 'Gotham', sans-serif;
-}
-
 /* GENERELLE REGLER */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+/* Sætter højden på hele html dokumentet til 100% */
+html {
+    height: 100%;
+}
+
+/* Regler for alt inde i body */
+body {
+    font-family: 'Gotham', sans-serif;
+    height: 100%;
 }
 
 /* PRE-HEADER */
@@ -24,67 +31,234 @@ body {
 
 .fa-circle {
     color: white;
-    font-size: 10px;
+    font-size: 8px;
     position: relative;
     top: 5px;
 }
 
-/* HEADER */
+/* HERO */
+
+/* Hero div er lavet så det er rundt om headeren, nav og cta */
 #hero {
-    background-image: url(images/hero.jpg);
+    background-image: url(images/hero4.jpg);
     background-size: 100%;
-    background-position-y: -50px;
-    height: 600px;
+    background-repeat: no-repeat;
+    object-fit:contain;
+    height: 95%;
 }
 
+/* HEADER */
+
+/* nav */
 nav {
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
+    align-items: center;
 }
 
-nav img {
-    width: 250px;
+#logo img {
+    width: 300px;
 }
 
 nav a {
+    font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
     color: black;
+    padding: 10px 0px;
 }
 
-#nav-left {
+/* Booking knap i nav */
+#booking {
+    box-sizing: border-box;
+    background-color: #6e6e6e;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: .1s;
+}
+#booking:hover {
+    background-color: #FFC552;    
+}
+
+/* BURGERMENU */
+
+/* logo rettes på mobil */
+#burger {
+    display: none;
+    padding: 30px;
+    align-items: center;
+}
+#burger i {
+    font-size: 20pt;
+    color: black;
+    padding: 10px 0px;
+    position: relative;
+    bottom: 2px;
+}
+#mobil-logo img {
     width: 300px;
-    display: flex;
-    justify-content: space-between;
 }
 
-/* DROP DOWN*/
+/* DROPDOWN */
 
-.dropdown{
+.dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content{
+.dropdown-content {
     display: none;
     position: absolute;
-    top: 20px;
-    left:0; 
-    background-color: rgb(219, 219, 219);
-    width: 150px;
-    height: 150px;
+    top: 25px;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.555);
+    border-radius: 0px 0px 5px 5px;
+    padding-top: 10px;
 }
 
-.dropdown-content a{
+.dropdown-content a {
     display:block;
     text-decoration: none;
+    text-transform: capitalize;
     color: black;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
-.dropdown:hover .dropdown-content{
+.dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* CALL TO ACTION */
+
+#cta {
+    text-align: center;
+    margin-top: 450px;
+    padding-bottom: 100px;
+}
+#cta a {
+    text-decoration: none;
+    color: white;
+    font-size: 20pt;
+    font-weight: 500;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    background-color: #FFC552;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: .1s;
+}
+
+/* VELKOMMEN */
+#velkommen-sektion {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+}
+#velkommen-sektion h1 {
+    font-weight: 500;
+}
+#velkommen-sektion h2 {
+    font-size: 16pt;
+    font-weight: 400;
+    padding-top: 10px;
+}
+#velkommen-sektion p {
+    width: 50%;
+    margin: auto;
+    padding-top: 30px;
+    font-weight: 100;
+}
+
+/* CIRKEL MENUER */
+
+/* div som indeholder alle cirkler med ikoner og tekst */
+#cirkel-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 50px;
+}
+#cirkel-container a {
+    text-decoration: none;
+    transition: .2s;
+    color: black;
+    text-align: center;
+}
+#cirkel-container h2 {
+    padding-top: 10px;
+    font-weight: 400;
+}
+#cirkel-container a:hover {
+    scale: 1.05;
+}
+
+/* indholdet af hver cirkel */
+.cirkel {
+    border: 1px black solid;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* Ikonet ind i cirklerne */
+.cirkel i {
+    font-size: 170px;
+    color: #FFC552;
+}
+
+/* ANMELDELSER */
+
+#anmeldelser-container {
+    background-color: #EDEBE7;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#anmeldelser-container i {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quote {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #FFC552;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+}
+.quote i {
+    font-size: 25pt;
+    color: white;
+}
+
+.anmeldelse {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    width: 300px;
+}
+.anmeldelse h4 {
+    width: 90%;
+    font-weight: 100;
+    font-size: 12pt;
+}
+
+.placeholder {
+    background-color: grey;
+    height: 200px;
+    width: 300px;
 }
 
 /* FOOTER */
@@ -95,12 +269,9 @@ footer {
     border-top: #FFC552 5px solid;
 }
 
-footer div:not(#some) {
-}
-
 footer div {
     margin: 40px;
-    padding: 20px; 
+    padding: 20px;
 }
 
 footer div h3 {
@@ -108,13 +279,21 @@ footer div h3 {
     font-weight: 400;
 }
 footer div p {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     font-weight: 100;
 }
 footer div p b {
     font-weight: 400;
 }
 
+footer hr {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    height: 180px;
+}
+
+/* ikoner */
 .fa-brands {
     font-size: 25pt;
 }
@@ -123,4 +302,121 @@ footer div p b {
 }
 .fa-instagram {
     color: #ce0951;
+}
+
+/* BREAKPOINT V. 1050 PX */
+
+@media screen and (max-width: 1050px) {
+    /* BURGER */
+
+    /* Her vises burger menu */
+    #burger {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        align-items: center;
+    }
+    /* Logo placeres i midten */
+    #mobil-logo {
+        margin: auto;
+    }
+    /* Resten af nav skjules */
+    nav {
+        display: none;
+    }
+
+    /* HERO */
+
+    /* Baggrundsbillede rettes */
+    #hero {
+        height: 70%;
+    }
+
+    /* CALL TO ACTION */
+    #cta {
+        margin-top: 280px;
+    }
+    #cta a {
+        padding: 12px 10px;
+        font-size: 15pt;
+    }
+
+    /* FOOTER */
+
+    /* Retning ændres på flexbox */
+    footer {
+        flex-direction: column;
+    }
+    /* HR får en anden højde og placeres i 0 */
+    footer hr {
+        height: 1px;
+        top: 0;
+    }
+
+    /* BREAKPOINT V. 750PX */
+
+    @media screen and (max-width: 750px) {
+        /* HERO */
+
+        /* Baggrundsbillede justeres igen */
+        #hero {
+            background-size: 130%;
+            background-position-x: -65px;
+            object-fit: cover;
+            height: 60%;
+        }
+
+        /* CALL TO ACTION */
+
+        /* cta rettes så den har den er placeret korrekt */
+        #cta {
+            margin-top: 220px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        /* BURGER */
+        
+        /* små ændringer på padding */
+        #burger {
+            padding: 10px 10px;
+        }
+        /* logo gøres mindre og rykkes lidt ned */
+        #mobil-logo img {
+            width: 240px;
+            position: relative;
+            top: 10px;
+        }
+        /* selve burger ikonet gøres mindre */
+        #burger i {
+            font-size: 15pt;
+        }
+
+        /* PRE-HEADER */
+
+        /* tekststørrelse ændres */
+        #pre-header {
+            font-size: 10pt;
+        }
+
+        /* HERO */
+
+        /* Højde på hero billedet ændrs */
+        #hero {
+            height: 40%;
+            background-position-x: -40px;
+        }
+
+        /* CALL TO ACTION */
+
+        /* placering af cta knap ændres */
+        #cta {
+            margin-top: 150px;
+        }
+        #cta a {
+            padding: 8px;
+            font-size: 10pt;
+        }
+
+    }
 }
