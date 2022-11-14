@@ -1,25 +1,20 @@
-/* FONTS */
-@import url('https://fonts.cdnfonts.com/css/gotham');
+@import url('https://fonts.cdnfonts.com/css/gotham'); 
 
 /* GENERELLE REGLER */
-* {
-    padding: 0;
-    margin: 0;
+
+*{ 
+    padding:0;
+    margin:0;
     box-sizing: border-box;
 }
 
-/* Sætter højden på hele html dokumentet til 100% */
-html {
-    height: 100%;
+body{
+/* font-family:'gotham', sans-serif; */
+color:black;
+height: 100%;
 }
 
-/* Regler for alt inde i body */
-body {
-    font-family: 'Gotham', sans-serif;
-    height: 100%;
-}
-
-/* PRE-HEADER */
+/* HEADER */
 #pre-header {
     display: flex;
     justify-content: center;
@@ -36,18 +31,12 @@ body {
     top: 5px;
 }
 
-/* HERO */
-
-/* Hero div er lavet så det er rundt om headeren, nav og cta */
-#hero {
-    background-image: url(images/hero4.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    object-fit:contain;
-    height: 95%;
+#menulinje{ 
+    background-color: white;
+    position: sticky;
+    top:0;
 }
 
-/* HEADER */
 
 /* nav */
 nav {
@@ -72,14 +61,14 @@ nav a {
 /* Booking knap i nav */
 #booking {
     box-sizing: border-box;
-    background-color: #6e6e6e;
+    background-color:#FFC552;
     color: white;
     padding: 12px 20px;
     border-radius: 30px;
     transition: .1s;
 }
 #booking:hover {
-    background-color: #FFC552;    
+    background-color:#ffd978;    
 }
 
 /* BURGERMENU */
@@ -113,7 +102,9 @@ nav a {
     position: absolute;
     top: 25px;
     left:0;
-    background-color: rgba(255, 255, 255, 0.555);
+    background-color:white;
+    box-shadow:2px 2px #edebe7;
+    /* Ellers kan der bruges borders istedet */
     border-radius: 0px 0px 5px 5px;
     padding-top: 10px;
 }
@@ -130,139 +121,66 @@ nav a {
     display: block;
 }
 
-/* CALL TO ACTION */
 
-#cta {
-    text-align: center;
-    margin-top: 450px;
-    padding-bottom: 100px;
-}
-#cta a {
-    text-decoration: none;
-    color: white;
-    font-size: 20pt;
-    font-weight: 500;
-    text-transform: uppercase;
-    box-sizing: border-box;
-    background-color: #FFC552;
-    padding: 12px 30px;
-    border-radius: 30px;
-    transition: .1s;
+
+
+
+
+/* OVERSKRIFT MAIN  */
+.overskrift{ 
+text-align: center;
+margin:50px;
 }
 
-/* VELKOMMEN */
-#velkommen-sektion {
-    margin-top: 50px;
-    text-align: center;
-    width: 100%;
-}
-#velkommen-sektion h1 {
-    font-weight: 500;
-}
-#velkommen-sektion h2 {
-    font-size: 16pt;
-    font-weight: 400;
-    padding-top: 10px;
-}
-#velkommen-sektion p {
-    width: 50%;
-    margin: auto;
-    padding-top: 30px;
-    font-weight: 100;
+.overskrift h1{ 
+    margin-bottom:20px;
+    font-size:35px;
 }
 
-/* CIRKEL MENUER */
-
-/* div som indeholder alle cirkler med ikoner og tekst */
-#cirkel-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-    margin-top: 50px;
-}
-#cirkel-container a {
-    text-decoration: none;
-    transition: .2s;
-    color: black;
-    text-align: center;
-}
-#cirkel-container h2 {
-    padding-top: 10px;
-    font-weight: 400;
-}
-#cirkel-container a:hover {
-    scale: 1.05;
+.overskrift p{
+    margin-bottom:10px;
 }
 
-/* indholdet af hver cirkel */
-.cirkel {
-    border: 1px black solid;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+
+/* MAIN CONTENT */
+
+.fa-scissors{
+width:400px;
+height: 400px; 
+text-align: center; 
 }
 
-/* Ikonet ind i cirklerne */
-.cirkel i {
-    font-size: 170px;
-    color: #FFC552;
+.behandling{ 
+    border:2px solid #ffc552;
+    width:80%;
+    margin:auto;
+    margin-bottom:40px;
+    border-radius:35px;
 }
 
-/* ANMELDELSER */
-
-#anmeldelser-container {
-    background-color: #EDEBE7;
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-#anmeldelser-container i {
-    align-items: center;
-    justify-content: space-between;
+.behandling div{ 
+    display:flex;
+    border-bottom:2px dotted #edebe7;
+    justify-content:space-between;
+    width:90%;
+    margin:auto;
+    margin-bottom:20px;
 }
 
-.quote {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    background-color: #FFC552;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    position: relative;
-    bottom: 30px;
-}
-.quote i {
-    font-size: 25pt;
-    color: white;
-}
 
-.anmeldelse {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: white;
-    width: 300px;
-}
-.anmeldelse h4 {
+.behandling h2{ 
+    padding-top:40px;
+    padding-bottom:40px;
     width: 90%;
-    font-weight: 100;
-    font-size: 12pt;
+    margin: auto;
 }
 
-.placeholder {
-    background-color: grey;
-    height: 200px;
-    width: 300px;
-}
+
+
+
+
 
 /* FOOTER */
-
 footer {
     display: flex;
     justify-content: space-around;
@@ -304,6 +222,7 @@ footer hr {
     color: #ce0951;
 }
 
+
 /* BREAKPOINT V. 1050 PX */
 
 @media screen and (max-width: 1050px) {
@@ -325,22 +244,6 @@ footer hr {
         display: none;
     }
 
-    /* HERO */
-
-    /* Baggrundsbillede rettes */
-    #hero {
-        height: 70%;
-    }
-
-    /* CALL TO ACTION */
-    #cta {
-        margin-top: 280px;
-    }
-    #cta a {
-        padding: 12px 10px;
-        font-size: 15pt;
-    }
-
     /* FOOTER */
 
     /* Retning ændres på flexbox */
@@ -352,28 +255,8 @@ footer hr {
         height: 1px;
         top: 0;
     }
-
-    /* BREAKPOINT V. 750PX */
-
-    @media screen and (max-width: 750px) {
-        /* HERO */
-
-        /* Baggrundsbillede justeres igen */
-        #hero {
-            background-size: 130%;
-            background-position-x: -65px;
-            object-fit: cover;
-            height: 60%;
-        }
-
-        /* CALL TO ACTION */
-
-        /* cta rettes så den har den er placeret korrekt */
-        #cta {
-            margin-top: 220px;
-        }
-    }
-
+}
+   
     @media screen and (max-width: 500px) {
         /* BURGER */
         
@@ -398,25 +281,4 @@ footer hr {
         #pre-header {
             font-size: 10pt;
         }
-
-        /* HERO */
-
-        /* Højde på hero billedet ændrs */
-        #hero {
-            height: 40%;
-            background-position-x: -40px;
-        }
-
-        /* CALL TO ACTION */
-
-        /* placering af cta knap ændres */
-        #cta {
-            margin-top: 150px;
-        }
-        #cta a {
-            padding: 8px;
-            font-size: 10pt;
-        }
-
     }
-}
