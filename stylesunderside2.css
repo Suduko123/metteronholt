@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@200&display=swap');
+
+
+
+/*-- GENERELLE REGLER------------------------------------------------------------------------------------------------------------------------------------ */
+
+*{ 
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color:black;
+    height: 100%;
+}
+
+.overskrift{ 
+    text-align: center;
+    margin:50px;
+}
+
+.overskrift h1{ 
+    margin-bottom:20px;
+    font-size:35px;
+}
+
+.overskrift p{
+    margin-bottom:10px;
+}
+
+/*-- DER KAN SKE PROBELMER HER ------------------------------------------------- */
+main{
+    width: 80%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+/*---HEADER------------------------------------------------------------------------------------------------------------------------------------- */
+#pre-header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #FFC552;
+    color: white;
+    padding: 15px;
+}
+
+.fa-circle {
+    color: white;
+    font-size: 8px;
+    position: relative;
+    top: 5px;
+}
+
+#menulinje{ 
+    background-color: white;
+    position: sticky;
+    top:0;
+}
+
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    align-items: center;
+}
+
+#logo img {
+    width: 300px;
+}
+
+nav a {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 10px 0px;
+}
+
+/* Booking knap i nav */
+#booking {
+    box-sizing: border-box;
+    background-color:#FFC552;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: .1s;
+}
+#booking:hover {
+    background-color:#ffd978;    
+}
+
+/* BURGERMENU */
+
+/* logo rettes på mobil */
+#burger {
+    display: none;
+    padding: 30px;
+    align-items: center;
+}
+#burger i {
+    font-size: 20pt;
+    color: black;
+    padding: 10px 0px;
+    position: relative;
+    bottom: 2px;
+}
+#mobil-logo img {
+    width: 300px;
+}
+
+/* DROPDOWN */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left:0;
+    background-color:white;
+    box-shadow:2px 2px #edebe7;
+    border-radius: 0px 0px 5px 5px;
+    padding-top: 10px;
+}
+
+.dropdown-content a {
+    display:block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    padding: 10px 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+
+
+/*--- UNDERSIDE BEHANDLINGER-------------------------------------------------------------------------------------------------------------------------------- */
+
+.fa-scissors{
+    width:400px;
+    height: 400px; 
+    text-align: center; 
+}
+
+.behandling{ 
+    border:2px solid #ffc552;
+    /*width:80%;
+    margin:auto; SKAL SLETTES I CHRISTOFFERS KODE*/
+    margin-bottom:40px;
+    border-radius:35px;
+}
+
+.behandling div{ 
+    display:flex;
+    border-bottom:2px dotted #edebe7;
+    justify-content:space-between;
+    width:90%;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+
+.behandling h2{ 
+    padding-top:40px;
+    padding-bottom:40px;
+    width: 90%;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---  OM OS ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ØVERSTE DEL */
+#omos-bauggrund{
+    background-image: url("omosimg/omoshero.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:700px;
+    background-position:center;
+    text-align: center;
+    padding:100px;
+    margin-bottom:70px;
+}
+
+#omos-bauggrund p{
+    font-style: italic;
+    font-size:30px;
+    font-weight: 300;
+}
+
+
+
+/* PERSONALE CIRKLER */
+
+.under-overskrift{ 
+    text-align: center;
+    margin:50px;
+    margin-bottom:20px;
+    font-size:35px;
+    font-weight: 300;
+}
+
+.section-flexbox-personale{ 
+    display:flex;
+    justify-content:space-around;
+    margin-bottom:70px;
+}
+.flexbox-personale{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.flexbox-personale h2{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.flexbox-personale p{
+    text-align: center;
+    font-size: 10px;
+    margin: 10px;
+    font-style: italic;
+}
+
+.flexbox-personale img{
+    border-radius: 50%;
+}
+
+
+
+
+
+/* GALLERI */
+
+.div-galleri section{
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+    }
+
+.div-galleri section > div{
+    width:40%;
+    height:350px;
+    margin: 10px;
+    background-color:rgb(141, 141, 141);
+    }
+
+.div-galleri .større-billede{ 
+    width:60%;
+}
+
+#galleri-top-1{
+    background-image: url("omosimg/stolemedvask.jpg");
+    background-size: cover;
+    position:center;
+    background-repeat: no-repeat;
+}
+    
+#galleri-top-2{
+    background-image: url("omosimg/orangestole.jpg");
+    background-size: cover;
+    position:center;
+    background-repeat: no-repeat;
+}
+    
+#galleri-bund-1{
+    background-image: url("omosimg/stolesalon.jpg");
+    background-size: cover;
+    position:center;
+    background-repeat: no-repeat;
+}
+    
+#galleri-bund-2{
+    background-image: url("omosimg/produkterbutik.jpg");
+    background-size: cover;
+    position:center;
+    background-repeat: no-repeat;
+}
+
+
+/* VÆRDIER*/
+.værdier{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:130px;
+}
+
+.værdier h3{
+    font-weight: 400;
+}
+
+.værdier p{
+    font-weight:200;
+}
+
+.div-værdier{
+width:50%;
+line-height:40px;
+}
+
+.værdier img{
+    width: 100%;
+}
+
+
+
+
+
+
+/*---- FOOTER-------------------------------------------------------------------------------------------------------------------------------------------- */
+footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: #FFC552 5px solid;
+}
+
+footer div {
+    margin: 40px;
+    padding: 20px;
+}
+
+footer div h3 {
+    padding-bottom: 15px;
+    font-weight: 400;
+}
+footer div p {
+    padding-bottom: 10px;
+    font-weight: 100;
+}
+footer div p b {
+    font-weight: 400;
+}
+
+footer hr {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    height: 180px;
+}
+
+/* IKONER */
+.fa-brands {
+    font-size: 25pt;
+}
+.fa-square-facebook {
+    color: #4267B2;
+}
+.fa-instagram {
+    color: #ce0951;
+}
+
+
+
+
+
+
+
+
+/* -------BREAKPOINTS--------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+/*-------BREAKPOINT V. 1050 PX--------------------------------------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 1050px) {
+/* -------BURGER.------------------------------------------------------ */
+
+/* Her vises burger menu */
+#burger {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    align-items: center;
+}
+
+/* Logo placeres i midten */
+#mobil-logo {
+    margin: auto;
+}
+    
+/* Resten af nav skjules */
+nav {
+    display: none;
+}
+
+
+/*------ FOOTER----------------------------------------------------------- */
+
+/* Retning ændres på flexbox */
+footer {
+    flex-direction: column;
+}
+    
+/* HR får en anden højde og placeres i 0 */
+footer hr {
+    height: 1px;
+    top: 0;
+}
+
+
+/* ------- UNDER SIDE OM OS ---------------------------------------------- */
+
+main{
+    width:95%;
+    margin:auto;
+}
+
+.overskrift h1{
+    font-size:30px;
+}
+.under-overskrift h2{
+    font-size:30px;
+}
+
+#omos-bauggrund p {
+    font-size: 20px;
+}
+
+/*--- GALLERI---- */
+.div-galleri {
+width: 95%;
+margin: auto;
+}
+.div-galleri section{
+    flex-direction: column;
+}
+.div-galleri section div{ 
+    width:100%;
+}
+
+.div-galleri .større-billede{ 
+    width:100%;
+}
+
+/* ----VÆRDIER---- */
+.værdier{
+    flex-direction: column;
+}
+
+.div-værdier{ 
+    width:100%;
+}
+
+.værdier img{
+    display: none;
+}
+}
+
+
+
+
+
+
+
+
+/*-------BREAKPOINT V. 800 PX--------------------------------------------------------------------------------------------------------------------------- */
+
+/* ----PERSONALE---- */
+@media screen and (max-width: 800px) {
+.section-flexbox-personale{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+/*-------BREAKPOINT V. 500 PX--------------------------------------------------------------------------------------------------------------------------- */
+
+   
+@media screen and (max-width: 500px) {
+/* BURGER */
+        
+    /* små ændringer på padding */
+#burger {
+    padding: 10px 10px;
+    }
+
+    /* logo gøres mindre og rykkes lidt ned */
+#mobil-logo img {
+    width: 240px;
+    position: relative;
+    top: 10px;
+    }
+    /* selve burger ikonet gøres mindre */
+        
+#burger i {
+    font-size: 15pt;
+    }
+
+        /* PRE-HEADER */
+
+        /* tekststørrelse ændres */
+#pre-header {
+    font-size: 10pt;
+    }
+    }
