@@ -1,27 +1,42 @@
-@import url('https://fonts.cdnfonts.com/css/gotham'); 
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* GENERELLE REGLER */
-
-*{ 
-    padding:0;
-    margin:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-body{
-/* font-family:'gotham', sans-serif; */
-color:black;
-height: 100%;
+/* Sætter højden på hele html dokumentet til 100% */
+html {
+    height: 100%;
 }
 
-/* HEADER */
-#pre-header {
+/* Regler for alt inde i body */
+body {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* PRE-HEADER */
+#pre-header-container {
+    background-color: #FFC552;
+    color: white;
     display: flex;
     justify-content: center;
     gap: 20px;
     background-color: #FFC552;
     color: white;
     padding: 15px;
+}
+
+
+#pre-header {
+    display: flex;
+    gap: 20px;
 }
 
 .fa-circle {
@@ -31,18 +46,34 @@ height: 100%;
     top: 5px;
 }
 
-#menulinje{ 
-    background-color: white;
-    position: sticky;
-    top:0;
+#mobil-pre {
+    display: none;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* HERO */
+
+/* Hero div er lavet så det er rundt om headeren, nav og cta */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(images/hero4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 95%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* HEADER */
 
 /* nav */
 nav {
     display: flex;
     justify-content: space-around;
-    padding-top: 30px;
+    padding-top: 25px;
     align-items: center;
 }
 
@@ -55,21 +86,23 @@ nav a {
     text-transform: uppercase;
     text-decoration: none;
     color: black;
-    padding: 10px 0px;
+    padding: 5px 0px;
 }
 
 /* Booking knap i nav */
 #booking {
     box-sizing: border-box;
-    background-color:#FFC552;
+    background-color: #6e6e6e;
     color: white;
     padding: 12px 20px;
     border-radius: 30px;
     transition: .1s;
 }
 #booking:hover {
-    background-color:#ffd978;    
+    background-color: #FFC552;    
 }
+
+/* ------------------------------------------------------------------------------------------------------------------- */
 
 /* BURGERMENU */
 
@@ -90,6 +123,8 @@ nav a {
     width: 300px;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------- */
+
 /* DROPDOWN */
 
 .dropdown {
@@ -100,11 +135,9 @@ nav a {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 25px;
+    top: 20px;
     left:0;
-    background-color:white;
-    box-shadow:2px 2px #edebe7;
-    /* Ellers kan der bruges borders istedet */
+    background-color: rgba(255, 255, 255, 0.555);
     border-radius: 0px 0px 5px 5px;
     padding-top: 10px;
 }
@@ -121,66 +154,197 @@ nav a {
     display: block;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------- */
 
+/* CALL TO ACTION */
 
-
-
-
-/* OVERSKRIFT MAIN  */
-.overskrift{ 
-text-align: center;
-margin:50px;
+#cta {
+    text-align: center;
+    margin-bottom: 70px;
+}
+#cta a {
+    text-decoration: none;
+    color: white;
+    font-size: 13pt;
+    font-weight: 800;
+    background-color: #FFC552;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: .3s;
+}
+#cta a:hover {
+    padding: 12px 35px;
 }
 
-.overskrift h1{ 
-    margin-bottom:20px;
-    font-size:35px;
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* VELKOMMEN */
+
+#velkommen-sektion {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
 }
-
-.overskrift p{
-    margin-bottom:10px;
-}
-
-
-/* MAIN CONTENT */
-
-.fa-scissors{
-width:400px;
-height: 400px; 
-text-align: center; 
-}
-
-.behandling{ 
-    border:2px solid #ffc552;
-    width:80%;
-    margin:auto;
-    margin-bottom:40px;
-    border-radius:35px;
-}
-
-.behandling div{ 
-    display:flex;
-    border-bottom:2px dotted #edebe7;
-    justify-content:space-between;
-    width:90%;
-    margin:auto;
-    margin-bottom:20px;
-}
-
-
-.behandling h2{ 
-    padding-top:40px;
-    padding-bottom:40px;
-    width: 90%;
+#velkommen-sektion h1 {
+    font-weight: 500;
+    width: 80%;
     margin: auto;
 }
+#velkommen-sektion h2 {
+    font-size: 16pt;
+    font-weight: 400;
+    padding-top: 10px;
+}
+#velkommen-sektion p {
+    width: 50%;
+    margin: auto;
+    padding-top: 30px;
+    font-weight: 300;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* CIRKEL MENUER */
+
+/* div som indeholder alle cirkler med ikoner og tekst */
+#cirkel-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 100px;
+}
+#cirkel-container a {
+    text-decoration: none;
+    transition: .2s;
+    color: black;
+    text-align: center;
+}
+#cirkel-container h2 {
+    padding-top: 20px;
+    font-weight: 400;
+}
+#cirkel-container a:hover {
+    scale: 1.05;
+}
+
+/* indholdet af hver cirkel */
+.cirkel {
+    border: 1px black solid;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: .2s;
+}
+.cirkel:hover {
+    border: 1px #FFC552 solid;
+    background-color: #FFC552;
+    color: white;
+}
+
+/* Ikonet ind i cirklerne */
+.cirkel i {
+    font-size: 170px;
+    color: #FFC552;
+    border-radius: 50%;
+    padding: 50px;
+    transition: .2s;
+}
+.cirkel i:hover {
+    color: white;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* ANMELDELSER */
 
 
+/* indeholder alle kortene */
+#anmeldelser-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #EDEBE7;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
 
+#anmeldelser-container i {
+    display: flex;
+    align-items: center;
+}
 
+/* selve div'en der laves til en cirkel */
+.quote {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #FFC552;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+    left: 20px;
+}
+/* ikonet inde i div'en */
+.quote i {
+    font-size: 25pt;
+    color: white;
+}
 
+/* dette er ét kort */
+.anmeldelse {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    width: 300px;
+    height: 420px;
+    position: relative;
+}
+
+/* billedet */
+.anmeldelse img {
+    width: 300px;
+}
+
+/* div som indeholder alt tekst i kortet */
+.anmeldelse-tekst {
+    padding-left: 20px;
+}
+
+/* selve anmeldelsen */
+.anmeldelse-tekst h4 {
+    width: 90%;
+    font-weight: 300;
+    font-size: 12pt;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+/* div med kundens navn og beskæftigelse */
+.kunde-info {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+    font-weight: 100;
+}
+.kunde-info b {
+    font-weight: 500;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
 
 /* FOOTER */
+
 footer {
     display: flex;
     justify-content: space-around;
@@ -192,16 +356,27 @@ footer div {
     padding: 20px;
 }
 
+footer div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
 footer div h3 {
     padding-bottom: 15px;
     font-weight: 400;
 }
 footer div p {
     padding-bottom: 10px;
-    font-weight: 100;
+    font-weight: 300;
 }
-footer div p b {
-    font-weight: 400;
+
+footer div p b, footer div a b {
+    font-weight: 500;
+}
+
+footer div a {
+    text-decoration: none;
+    color: black;
 }
 
 footer hr {
@@ -219,9 +394,10 @@ footer hr {
     color: #4267B2;
 }
 .fa-instagram {
-    color: #ce0951;
+    color: #C13584;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------- */
 
 /* BREAKPOINT V. 1050 PX */
 
@@ -244,6 +420,20 @@ footer hr {
         display: none;
     }
 
+    /* HERO */
+
+    /* Baggrundsbillede rettes */
+    header {
+        height: 70%;
+    }
+
+    /* CALL TO ACTION */
+    #cta a {
+        padding: 15px 20px;
+        font-size: 10pt;
+        letter-spacing: 1px;
+    }
+
     /* FOOTER */
 
     /* Retning ændres på flexbox */
@@ -256,29 +446,133 @@ footer hr {
         top: 0;
     }
 }
-   
-    @media screen and (max-width: 500px) {
-        /* BURGER */
-        
-        /* små ændringer på padding */
-        #burger {
-            padding: 10px 10px;
-        }
-        /* logo gøres mindre og rykkes lidt ned */
-        #mobil-logo img {
-            width: 240px;
-            position: relative;
-            top: 10px;
-        }
-        /* selve burger ikonet gøres mindre */
-        #burger i {
-            font-size: 15pt;
-        }
 
-        /* PRE-HEADER */
+/* ------------------------------------------------------------------------------------------------------------------- */
 
-        /* tekststørrelse ændres */
-        #pre-header {
-            font-size: 10pt;
-        }
+/* BREAKPOINT V. 750PX */
+
+@media screen and (max-width: 750px) {
+    /* HERO */
+
+    /* Baggrundsbillede justeres igen */
+    header {
+        background-size: 130%;
+        background-position-x: -65px;
+        object-fit: cover;
+        height: 60%;
     }
+
+    /* VELKOMMEN */
+
+    /* størrelsen på tekst ændres */
+    #velkommen-sektion h1 {
+        font-size: 18pt;
+    }
+    #velkommen-sektion h2 {
+        font-size: 12pt;
+    }
+
+    /* her rettes bredden på velkomsttekst */
+    #velkommen-sektion p {
+        font-size: 11pt;
+        width: 80%;
+    }
+
+    /* ANMELDELSER */
+
+    /* der gøres så kun ét kort vises */
+    .anmeldelse:not(#mobil-anmeldelse) {
+        display: none;
+    }
+
+    /* CIRKLER */
+
+    /* størrelsen ændres på cirkel menuerne */
+    .cirkel {
+        width: 180px;
+        height: 180px;
+    }
+    .cirkel i {
+        font-size: 80pt;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* BREAKPOINT V. 500PX */
+
+@media screen and (max-width: 500px) {
+    /* BURGER */
+    
+    /* logo gøres mindre og rykkes lidt ned */
+    #mobil-logo img {
+        width: 260px;
+    }
+    /* selve burger ikonet gøres mindre */
+    #burger i {
+        font-size: 15pt;
+    }
+
+    /* PRE-HEADER */
+
+    /* tekststørrelse ændres */
+    #pre-header {
+        font-size: 10pt;
+    }
+    #pre-header p, #pre-header i {
+        display: none;
+    }
+    #mobil-pre {
+        display: block;
+    }
+
+    /* HERO */
+
+    /* Højde på hero billedet ændrs */
+    header {
+        height: 50%;
+        background-position-x: -70px;
+        background-size: 200%;
+    }
+
+    /* CALL TO ACTION */
+
+    /* placering af cta knap ændres */
+    #cta a {
+        padding: 15px 20px;
+        font-size: 12pt;
+        font-weight: 700;
+    }
+
+    /* CIRKLER */
+
+    #cirkel-container {
+        gap: 10px;
+        margin-top: 50px;
+    }
+
+    #cirkel-container a:not(#cirkel-unik) {
+        margin-right: 120px;
+    }
+
+    #cirkel-container a:nth-child(2) {
+        margin-left: 120px;
+    }
+
+    #cirkel-container h2 {
+        padding: 5px;
+        font-size: 15pt;
+    }
+
+    /* VELKOMMEN */
+
+    /* bredden på velkommen brødtekst ændres */
+    #velkommen-sektion p {
+        width: 80%;
+    }
+
+    /* SOCIALS */
+    .fa-brands {
+        font-size: 30pt;
+    }
+}

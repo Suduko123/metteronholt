@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap'); 
+
+/* GENERELLE REGLER */
+
+*{ 
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color:black;
+    height: 100%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* PRE-HEADER */
+#pre-header-container {
+    background-color: #FFC552;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #FFC552;
+    color: white;
+    padding: 15px;
+}
+
+
+#pre-header {
+    display: flex;
+    gap: 20px;
+}
+
+.fa-circle {
+    color: white;
+    font-size: 8px;
+    position: relative;
+    top: 5px;
+}
+
+#mobil-pre {
+    display: none;
+}
+
+/* HEADER */
+
+header { 
+    z-index: 1;
+    background-color: white;
+    position: sticky;
+    top:0;
+}
+
+/* nav */
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+#logo img {
+    width: 300px;
+}
+
+nav a {
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 5px 0px;
+}
+
+nav a:hover:not(#logo, #booking) {
+    border-bottom: 2px solid #FFC552;
+}
+
+/* Booking knap i nav */
+#booking {
+    box-sizing: border-box;
+    background-color:#FFC552;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    transition: .1s;
+}
+#booking:hover {
+    background-color:#ffd978;    
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* BURGERMENU */
+
+/* logo rettes på mobil */
+#burger {
+    display: none;
+    padding: 30px;
+    align-items: center;
+}
+#burger i {
+    font-size: 20pt;
+    color: black;
+    padding: 10px 0px;
+    position: relative;
+    bottom: 2px;
+}
+#mobil-logo img {
+    width: 300px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* DROPDOWN */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left:0;
+    background-color:white;
+    box-shadow:2px 2px #edebe7;
+    /* Ellers kan der bruges borders istedet */
+    border-radius: 0px 0px 5px 5px;
+    padding-top: 10px;
+}
+
+.dropdown-content a {
+    display:block;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    padding: 10px 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* OVERSKRIFT MAIN  */
+.overskrift{ 
+    text-align: center;
+    margin:50px;
+}
+
+.overskrift h1{ 
+    margin-bottom:20px;
+    font-size:35px;
+}
+
+.overskrift p{
+    margin-bottom:10px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* MAIN CONTENT */
+
+.fa-scissors {
+    width:400px;
+    height: 400px; 
+    text-align: center; 
+}
+
+.behandling { 
+    border:2px solid #ffc552;
+    width:80%;
+    margin:auto;
+    margin-bottom:40px;
+    border-radius:35px;
+}
+
+/* gør at den forklarende tekst ikke bliver mast sammen med priserne */
+.behandling div p:first-of-type {
+    width: 75%;
+}
+
+.behandling div { 
+    display:flex;
+    border-bottom:2px dotted #edebe7;
+    justify-content:space-between;
+    width:90%;
+    margin:auto;
+    margin-bottom:20px;
+}
+
+.behandling:last-child {
+    margin-bottom: 100px;
+}
+
+.behandling h2 { 
+    padding-top:40px;
+    padding-bottom:40px;
+    width: 90%;
+    margin: auto;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    border-top: #FFC552 5px solid;
+}
+
+footer div {
+    margin: 40px;
+    padding: 20px;
+}
+
+footer div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+footer div h3 {
+    padding-bottom: 15px;
+    font-weight: 400;
+}
+footer div p {
+    padding-bottom: 10px;
+    font-weight: 300;
+}
+
+footer div p b, footer div a b {
+    font-weight: 500;
+}
+
+footer div a {
+    text-decoration: none;
+    color: black;
+}
+
+footer hr {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    height: 180px;
+}
+
+/* ikoner */
+.fa-brands {
+    font-size: 25pt;
+}
+.fa-square-facebook {
+    color: #4267B2;
+}
+.fa-instagram {
+    color: #C13584;
+}
+
+
+
+
+/* PRAKTISK INFO SIDE STARTER HER */
+
+/* den øverste sektion med kontakt og åbningstider */
+#vigtig-info {
+    width: 45%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+#vigtig-info-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#vigtig-info-container div {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+
+#vigtig-info-container h2 {
+    font-weight: 700;
+    font-size: 15pt;
+}
+
+#vigtig-info-container div p {
+    padding-top: 20px;
+    font-weight: 300;
+}
+
+#vigtig-info-container div p b, a b {
+    font-weight: 500;
+}
+
+#vigtig-info-container a {
+    text-decoration: none;
+    color: black;
+    padding-top: 20px;
+}
+
+/* cirklen med FAQ tekst placeret i midten */
+#faq {
+    border: 1px #FFC552 solid;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: .2s;
+    margin: auto;
+    margin-bottom: 50px;
+}
+#faq h3 {
+    color: #FFC552;
+    font-size: 50pt;
+    font-weight: 800;
+}
+
+/* FAQ sektion starter her */
+#questions {
+    margin-bottom: 100px;
+}
+
+#questions-container {
+    display: flex;
+    gap: 50px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#questions-container div {
+    width: 100%;
+}
+
+#questions-container div h3 {
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+#questions-container div h4 {
+    padding-bottom: 15px;
+    font-weight: 400;
+}
+
+#questions-container div p {
+    padding-bottom: 15px;
+    line-height: 20px;
+    font-size: 11pt;
+    font-weight: 300;
+}
+
+#questions hr {
+    width: 70%;
+    margin: auto;
+}
+
+/* Maps sektion starter her */
+#maps {
+    margin-bottom: 50px;
+}
+
+#maps h5 {
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 20pt;
+    font-weight: 500;
+}
+
+.fa-map-pin {
+    font-size: 30pt;
+    color: #FFC552;
+    padding-right: 5px;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
+
+/* Transport sektion starter her */
+#transport {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+.kolonne {
+    width: 50%;
+}
+.kolonne h3 {
+    padding-bottom: 20px;
+}
+.kolonne ul {
+    padding-left: 15px;
+}
+.kolonne li {
+    padding-bottom: 10px;
+    list-style-image: url(images/SVG/Artboard\ 1.svg);
+    padding-left: 5px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* BREAKPOINT V. 1050 PX */
+
+@media screen and (max-width: 1050px) {
+    /* BURGER */
+
+    /* Her vises burger menu */
+    #burger {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        align-items: center;
+    }
+    /* Logo placeres i midten */
+    #mobil-logo {
+        margin: auto;
+    }
+    /* Resten af nav skjules */
+    nav {
+        display: none;
+    }
+
+    /* FOOTER */
+
+    /* Retning ændres på flexbox */
+    footer {
+        flex-direction: column;
+    }
+    /* HR får en anden højde og placeres i 0 */
+    footer hr {
+        height: 1px;
+        top: 0;
+    }
+
+    /* VIGTIG INFO */
+
+    #vigtig-info {
+        width: 60%;
+    }
+
+    #vigtig-info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* TRANSPORT */
+    #transport {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .kolonne {
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+
+/* BREAKPOINT V. 500 PX */
+
+@media screen and (max-width: 500px) {
+    /* BURGER */
+    
+    /* logo gøres mindre og rykkes lidt ned */
+    #mobil-logo img {
+        width: 240px;
+    }
+    /* selve burger ikonet gøres mindre */
+    #burger i {
+        font-size: 15pt;
+    }
+
+    /* PRE-HEADER */
+
+    /* tekststørrelse ændres */
+    #pre-header {
+        font-size: 10pt;
+    }
+    #pre-header p, #pre-header i {
+        display: none;
+    }
+    #mobil-pre {
+        display: block;
+    }
+
+    /* BEHANDLING */
+
+    /* ændrer bredde på sektionerne med priser */
+    .behandling {
+        width: 90%;
+    }
+
+    /* FREQUENTLY ASKED QUESTIONS */
+
+    #questions-container {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #questions hr {
+        width: 80%;
+    }
+
+    /* MAPS */
+
+    #maps h5 {
+        font-size: 15pt;
+    }
+    .fa-map-pin {
+        font-size: 20pt;
+    }
+    iframe {
+        height: 250px;
+    }
+}
