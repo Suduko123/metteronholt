@@ -128,8 +128,7 @@ nav a:hover:not(#logo, #booking) {
     top: 25px;
     left:0;
     background-color:white;
-    box-shadow:2px 2px #edebe7;
-    /* Ellers kan der bruges borders istedet */
+    box-shadow:2px 2px #edebe7; /* Ellers kan der bruges borders istedet */
     border-radius: 0px 0px 5px 5px;
     padding-top: 10px;
 }
@@ -149,17 +148,17 @@ nav a:hover:not(#logo, #booking) {
 /* ------------------------------------------------------------------------------------------------------------------- */
 
 /* OVERSKRIFT MAIN  */
-.overskrift{ 
+.overskrift { 
     text-align: center;
     margin:50px;
 }
 
-.overskrift h1{ 
+.overskrift h1 { 
     margin-bottom:20px;
     font-size:35px;
 }
 
-.overskrift p{
+.overskrift p {
     margin-bottom:10px;
 }
 
@@ -261,8 +260,6 @@ footer hr {
 .fa-instagram {
     color: #C13584;
 }
-
-
 
 
 /* PRAKTISK INFO SIDE STARTER HER */
@@ -389,13 +386,10 @@ iframe {
 /* Transport sektion starter her */
 #transport {
     display: flex;
+    justify-content: space-between;
     margin: auto;
-    width: 80%;
-    gap: 100px;
-    margin-bottom: 100px;
-}
-.kolonne {
     width: 50%;
+    margin-bottom: 100px;
 }
 .kolonne h3 {
     padding-bottom: 20px;
@@ -407,9 +401,173 @@ iframe {
     padding-bottom: 10px;
     list-style-image: url(images/SVG/Artboard\ 1.svg);
     padding-left: 5px;
+    width: 80%;
 }
 
 /* ------------------------------------------------------------------------------------------------------------------- */
+
+/* OM OS SIDE STARTER HER */
+
+/* ---  OM OS ----------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* ØVERSTE DEL */
+
+#omos-bauggrund {
+    background-image: url("omosimg/omoshero.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:700px;
+    background-position:center;
+    text-align: center;
+    padding:100px;
+    margin-bottom:70px;
+}
+
+#omos-bauggrund p {
+    font-style: italic;
+    font-size:30px;
+    font-weight: 300;
+}
+
+/* PERSONALE CIRKLER */
+
+.under-overskrift { 
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.section-flexbox-personale { 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-bottom: 70px;
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+}
+.flexbox-personale {
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px;
+}
+
+.flexbox-personale h2 {
+    text-align: center;
+    font-size: 15pt;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.flexbox-personale p {
+    text-align: center;
+    font-size: 10pt;
+    font-weight: 300;
+    margin: 10px;
+    font-style: italic;
+}
+
+.flexbox-personale img {
+    border-radius: 50%;
+}
+
+/* GALLERI */
+
+.galleri {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1400px;
+    margin: auto;
+    gap: 15px;
+}
+
+.galleri-indhold {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 15px;
+}
+
+.galleri-indhold div {
+    width: 50%;
+    height: 330px;
+}
+
+#galleri-top-1 {
+    background-image: url("omosimg/stolemedvask.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -20px;
+    object-fit: cover;
+    width: 70%;
+}
+
+#galleri-top-2 {
+    background-image: url("omosimg/orangestole.jpg");
+    background-size: cover;
+    position:center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+#galleri-bund-1 {
+    background-image: url("omosimg/stolesalon.jpg");
+    background-size: cover;
+    position:center;
+    background-repeat: no-repeat;
+    background-position-y: -130px;
+}
+
+#galleri-bund-2 {
+    background-image: url("omosimg/produkterbutik.jpg");
+    background-size: cover;
+    position:center;
+    background-repeat: no-repeat;
+    width: 70%;
+}
+
+
+/* VÆRDIER*/
+.værdier {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    gap: 80px;
+    max-width: 1400px;
+    margin: auto;
+    margin-bottom: 150px;
+}
+
+.værdier h3 {
+    font-weight: 500;
+    font-size: 16pt;
+    padding-bottom: 10px;
+}
+
+.værdier p {
+    font-weight: 300;
+}
+
+.div-værdier {
+    width: 50%;
+    line-height: 30px;
+}
+
+#salonpiger {
+    background-image: url(omosimg/fællesbillede.jpg);
+    background-position-y: -50px;
+    background-position-x: -20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 50%;
+}
+
 
 /* BREAKPOINT V. 1050 PX */
 
@@ -459,9 +617,61 @@ iframe {
     #transport {
         flex-direction: column;
         gap: 30px;
+        width: 70%;
     }
     .kolonne {
         width: 100%;
+    }
+
+    /* ------- UNDERSIDE OM OS ---------------------------------------------- */
+
+    /* højden på baggrundsbilledet ændres */
+    #omos-bauggrund {
+        height: 500px;
+    }
+    /* Skriftstørrelse på overskrift ændres */
+    .overskrift h1 {
+        font-size:30px;
+    }
+    /* Størrelse på underoverskrift ændres */
+    .under-overskrift h2 {
+        font-size:30px;
+    }
+    /* Størrelse på tekst inde i baggrundsbillede ændres */
+    #omos-bauggrund p {
+        font-size: 25px;
+    }
+
+    /* Galleri ændres til column og tilpasses i bredden */
+    .galleri-indhold {
+        flex-direction: column;
+        align-items: center;
+    }
+    #galleri-top-1 {
+        background-position-y: 20px;
+    }
+    #galleri-bund-1 {
+        background-position-y: -200px;
+    }
+    /* der ændres højde og bredde på billede i galleret */
+    .galleri-indhold div, #galleri-top-1, #galleri-bund-2 {
+        width: 90%;
+        height: 280px;
+    }
+    
+    .div-værdier {
+        width: 100%;
+    }
+
+    #salonpiger {
+        display: none;
+    }
+    #skjultbillede {
+        display: block;
+    }
+
+    .section-flexbox-personale {
+        justify-content: space-around;
     }
 }
 
@@ -494,6 +704,12 @@ iframe {
         display: block;
     }
 
+    /* FOOTER */
+    footer div {
+        justify-content: space-evenly;
+        margin: 10px;
+    }
+
     /* BEHANDLING */
 
     /* ændrer bredde på sektionerne med priser */
@@ -522,5 +738,40 @@ iframe {
     }
     iframe {
         height: 250px;
+    }
+
+    /* ------- UNDERSIDE OM OS ---------------------------------------------- */
+
+    .under-overskrift {
+        font-size: 20pt;
+    }
+
+
+    /* Baggrundsbillede gøres mindre */
+    #omos-bauggrund {
+        height: 400px;
+        padding: 50px;
+    }
+
+    /* Tekststørrelse gøres mindre i billedet */
+    #omos-bauggrund p {
+        font-size: 20px;
+    }
+
+    .galleri-indhold div, #galleri-top-1, #galleri-bund-2 {
+        width: 100%;
+        height: 200px;
+    }
+
+    #galleri-top-1 {
+        background-position-y: -20px;
+    }
+
+    .værdier h3 {
+        font-size: 14pt;
+    }
+
+    .værdier p {
+        font-size: 11pt;
     }
 }
