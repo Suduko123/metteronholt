@@ -1,63 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hos Frisør Mette Rønholt får du altid en personlig og grundig vejledning. 
+    Vi lytter til dine ønsker så du altid får det ønskede resultat. Vi er en familie og handicapvenlig frisør med højt til loftet.">
+    <meta name="keywords" content="frisør dameklip elevklip herreklip reflekser frisørsalon viby studierabat handicapvenlig aarhus">
+    <link rel="stylesheet" href="undersider.css">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/e4a889809e.js" crossorigin="anonymous"></script>
     <title>Produkter</title>
-
-    <link rel="stylesheet" href="styles3.css">
 </head>
 
 <body>
 
-    <header>
-    </header>
+<!-- PRE-HEADER -->
 
-    <main>
-        
-        <!-- Her er der brugt class for at imitere main, 
-            så jeg kan style hele produktsiden uden at ramme de andre sider -->
-            <div class="produktside">
-                <h1>Produkter</h1>
-                    <p>Hos Frisør Mette Rønholt forhandler vi de to brands Ingredion og Eleven. <br>Begge produktlinjer har utroligt gode egenskaber, så du kan finde sunde, gennemtestede og effektive produtker.<br><br>
-                    Ingredion er især god til dem som skal bruge et allergivenlig produkt. Eleven er 100% dyrevenligt da de både er Cruelty Free og vegansk.</p>
+<!-- Gul pre-header før nav -->
+<div id="pre-header-container">
+    <div id="pre-header">
+        <p>Få 10% studierabat i salonen</p>
+        <i class="fa-solid fa-circle"></i>
+        <p>Få 20% rabat på elevklip</p>
+    </div>
+    <div id="mobil-pre"> <!-- bruges til kun at vise én linje tekst på mobil -->
+        <p>Få 10% studierabat i salonen</p>
+    </div>
+</div>
+
+<!-- HEADER -->
+
+<header>
+    <!-- Navigation -->
+    <nav>
+        <a href="behandlinger.html">behandlinger</a>
+
+        <!-- Første dropdown -->
+        <div class="dropdown">
+        <a href="produkter.html" class="dropdown-btn">Brands <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="dropdown-content">
+                <a href="#ingredien">Ingredien</a>
+                <a href="#eleven">Eleven Australia</a>
             </div>
-
-            <!-- Her starter flexbokse.
-            ".div-produktside" skal ramme flexboksene og bestemme hvordan de skal flexe
-            ".flex-produktside" skal bestemme hvor meget indholdet må fylde i flexboksen.
-            Samtidig bruger jeg også ".flex-produktside" til at style h1 -->
-
-            <div class="div-produktside">
-                    <div class="flex-produktside">
-                        <h1>Ingredien</h1>
-                        <p>Ingrediens styling og plejeprodukter er utroligt effektive, har et lækkert design og ikke mindst er deres produkter certificerede, som sikrer dig sunde produkter.<br><br>
-                        Ingrediens produkter har det skandinaviske Svanemærke, som sikrer at produkterne er produceret med hensyn til miljø og arbejdsvilkår. Svanemærket er et af de eneste officielle miljømærker i Danmark.<br><br>
-                        Derudover har Ingredien også certificeringerne Cosmos Organic og Allergy Certified. Cosmos Organic og Allergy Certified sikrer dig at de produkter du bruger er økologiske og allergivenlige.<br><br>
-                        Ingrediens har også en vegansk produktlinje, som hedder "Kvansus".
-                        </p>
-                    </div>
-                    <img src="images/ingredien.jpg" alt="ingredien">
-            </div>
-
-            <div class="div-produktside">
-                <div class="flex-produktside">
-                    <h1>Eleven Australia</h1>
-                    <p>Eleven Australia laver skønne veganske produkter, som ligeledes har stor effekt på dit hår. <br><br> Elven er blandt andet certificeret med PETA’s Cruelty Free, som sikrer dig at ingen af dine produkter er testet på dyr.
-                        Produkterne er fyldt på emballage lavet af 100% genanvendelige materialer.<br><br>
-                        Elevens produkter er fyldt med aktive ingredienser som avokadoolie og økologisk argan.
-                        Elevens produkter vedligeholder samtidig dit farvebehandlede hår.<br><br>
-                        Alle Eleven Australias produkter er veganske.</p>
-                </div>
-            <img src="images/eleven.jpg" alt="eleven">
         </div>
 
-                      
-    </main>
+        <a href="#">Webshop</a>
 
-    <footer>
-    </footer>
+        <a href="index.html" id="logo"><img src="images/logo.png" alt="logo"></a>
+
+        <a href="praktiskinfo.html">Praktisk info.</a>
+
+        <!-- Anden dropdown -->
+        <div class="dropdown">
+            <a href="omos.html" class="dropdown-btn">Om os <i class="fa-solid fa-chevron-down"></i></a>
+            <div class="dropdown-content">
+                <a href="omos.html#personale">Personale</a>
+                <a href="omos.html#galleri">Galleri</a>
+                <a href="omos.html#værdier">Værdier</a>
+            </div>
+        </div>
+
+        <a href="#" id="booking">booking</a>
+    </nav>
+
+    <!-- BURGER -->
+    <div id="burger">
+        <div id="mobil-logo">
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        </div>
+        <a href="menu.html"><i class="fa-solid fa-bars"></i></a>
+    </div>
+</header>
+
+<main>
+    <div id="produktside">
+        <h1>Produkter</h1>
+        <p>Hos Frisør Mette Rønholt forhandler vi de to brands Ingredion og Eleven. <br>Begge produktlinjer har utroligt gode egenskaber, så du kan finde sunde, gennemtestede og effektive produtker.<br><br>
+        Ingredion er især god til dem som skal bruge et allergivenlig produkt. Eleven er 100% dyrevenligt da de både er Cruelty Free og vegansk.</p>
+    </div>
+
+    <div class="produkt-container" id="ingredien">
+        <div class="produkt-tekst">
+            <h1>Ingredien</h1>
+            <img src="images/ingredien2.jpg" alt="ingredien" class="brandbillede-mobil">
+            <p>Ingrediens styling og plejeprodukter er utroligt effektive, har et lækkert design og ikke mindst er deres produkter certificerede, som sikrer dig sunde produkter.<br><br>
+            Ingrediens produkter har det skandinaviske Svanemærke, som sikrer at produkterne er produceret med hensyn til miljø og arbejdsvilkår. Svanemærket er et af de eneste officielle miljømærker i Danmark.<br><br>
+            Derudover har Ingredien også certificeringerne Cosmos Organic og Allergy Certified. Cosmos Organic og Allergy Certified sikrer dig at de produkter du bruger er økologiske og allergivenlige.<br><br>
+            Ingrediens har også en vegansk produktlinje, som hedder "Kvansus".
+            </p>
+        </div>
+        <img src="images/ingredien2.jpg" alt="ingredien" class="brandbillede-stor">
+    </div>
+
+    <div class="produkt-container" id="eleven">
+        <div class="produkt-tekst">
+            <h1>Eleven Australia</h1>
+            <img src="images/eleven2.jpg" alt="eleven" class="brandbillede-mobil">
+            <p>Eleven Australia laver skønne veganske produkter, som ligeledes har stor effekt på dit hår. <br><br> Elven er blandt andet certificeret med PETA’s Cruelty Free, som sikrer dig at ingen af dine produkter er testet på dyr.
+                Produkterne er fyldt på emballage lavet af 100% genanvendelige materialer.<br><br>
+                Elevens produkter er fyldt med aktive ingredienser som avokadoolie og økologisk argan.
+                Elevens produkter vedligeholder samtidig dit farvebehandlede hår.<br><br>
+                Alle Eleven Australias produkter er veganske.</p>
+        </div>
+        <img src="images/eleven2.jpg" alt="eleven" class="brandbillede-stor">
+    </div>                
+</main>
+
+<!-- Footer starter her -->
+<footer>
+    <div>
+        <h3>Kontakt</h3>
+        <a href="mailto:metterønholt@mail.dk"><b>E-mail:</b> metterønholt@mail.dk</a> <br>
+        <a href="tel:+4586 14 49 94"><b>Tlf.:</b> +45 86 14 49 94</a>
+    </div>
+    <hr>
+    <div>
+        <h3>Åbningstider</h3>
+        <p><b>Mandag - torsdag:</b> 9:00 - 17:30</p>
+        <p><b>Fredag:</b> 9:00 - 18:30</p>
+        <p><b>Lørdag:</b> 9:00-13:00</p>
+    </div>
+    <hr>
+    <div>
+        <h3>Adresse</h3>
+        <p>Rørdamsvej 1</p>
+        <p>8260 Viby J</p>
+    </div>
+    <hr>
+    <div id="some"> 
+        <h3>Følg os</h3>
+        <a href="https://www.facebook.com/FrisoerMetteRoenholt" target="_blank"><i class="fa-brands fa-square-facebook"></i></a> <a href="https://www.instagram.com/frisoer.metteroenholt/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+</footer>
     
 </body>
 </html>

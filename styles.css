@@ -92,14 +92,14 @@ nav a {
 /* Booking knap i nav */
 #booking {
     box-sizing: border-box;
-    background-color: #6e6e6e;
+    background-color: #FFC552;
     color: white;
     padding: 12px 20px;
     border-radius: 30px;
     transition: .1s;
 }
 #booking:hover {
-    background-color: #FFC552;    
+    background-color: #ffd978; 
 }
 
 /* ------------------------------------------------------------------------------------------------------------------- */
