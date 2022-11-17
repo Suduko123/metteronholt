@@ -67,11 +67,6 @@ nav {
     width: 300px;
 }
 
-@keyframes borderhover {
-    from {border-bottom-width: 0%;}
-    to {border-bottom-width: 100%;}
-}
-
 nav a {
     font-weight: 400;
     text-transform: uppercase;
@@ -517,7 +512,7 @@ iframe {
 #galleri-top-2 {
     background-image: url("omosimg/orangestole.jpg");
     background-size: cover;
-    position:center;
+    background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
 }
@@ -525,7 +520,7 @@ iframe {
 #galleri-bund-1 {
     background-image: url("omosimg/stolesalon.jpg");
     background-size: cover;
-    position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-position-y: -130px;
 }
@@ -533,7 +528,7 @@ iframe {
 #galleri-bund-2 {
     background-image: url("omosimg/produkterbutik.jpg");
     background-size: cover;
-    position:center;
+    background-position: center;
     background-repeat: no-repeat;
     width: 70%;
 }

@@ -54,7 +54,7 @@ body {
 
 /* HERO */
 
-/* Hero div er lavet så det er rundt om headeren, nav og cta */
+/* Inde i headeren er både NAV, Call to Action og Burgeren */
 header {
     display: flex;
     flex-direction: column;
@@ -225,7 +225,7 @@ nav a {
     font-weight: 400;
 }
 #cirkel-container a:hover {
-    scale: 1.05;
+    transform: scale(1.05);
 }
 
 /* indholdet af hver cirkel */
